@@ -10,6 +10,7 @@
     <title>Cat Collector</title>
     <!--Link to our materializing css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--Link to static css-->
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 </head>
@@ -26,6 +27,9 @@
                 <ul class="right">
                     <li><a href="{% url 'about' %}">About</a></li>
                     <li><a href="{%url 'index' %}">View All My Cats</a></li>
+                    <li><a href="{%url 'cats_create' %}">Add a Cat</a></li>
+                    <li><a href="{% url 'toys_create' %}">Add a Toy</a></li>
+                    <li><a href="{% url 'toys_index' %}">View All My Toys</a></li>
                 </ul>
             </div>
         </nav>
@@ -33,7 +37,7 @@
     <main class="container">{% block content %} {% endblock %}</main>
     <footer class="page-footer">
         <div class="right">
-            All Rights Reserved, &copy; 2019 Cat Collector &nbsp;
+            All Rights Reserved, &copy; 2022 Cat Collector &nbsp;
         </div>
     </footer>
 </body>

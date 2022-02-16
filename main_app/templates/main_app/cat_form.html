@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<form action="" method="post">
+    <!--we always have to use this tag in forms-->
+    {% csrf_token %}
+<table>
+    {{ form.as_table }}
+</table>
+
+    <input class="btn green" type="submit" value="add Cats">
+</form>
+
+{% endblock %}
